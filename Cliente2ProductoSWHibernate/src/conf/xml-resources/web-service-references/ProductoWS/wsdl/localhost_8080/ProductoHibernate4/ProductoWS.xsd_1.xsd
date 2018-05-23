@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://webservices.services.cl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://webservices.services.cl/">
+
+<xs:element name="BuscarProducto" type="tns:BuscarProducto" />
+
+<xs:element name="BuscarProductoResponse" type="tns:BuscarProductoResponse" />
+
+<xs:element name="ConsultarProducto" type="tns:ConsultarProducto" />
+
+<xs:element name="ConsultarProductoResponse" type="tns:ConsultarProductoResponse" />
+
+<xs:element name="IngresarProducto" type="tns:IngresarProducto" />
+
+<xs:element name="IngresarProductoResponse" type="tns:IngresarProductoResponse" />
+
+<xs:complexType name="IngresarProducto">
+<xs:sequence>
+<xs:element name="codigo" type="xs:int" />
+<xs:element name="nombre" type="xs:string" minOccurs="0" />
+<xs:element name="apellidoP" type="xs:string" minOccurs="0" />
+<xs:element name="apellidoM" type="xs:string" minOccurs="0" />
+<xs:element name="sexo" type="xs:string" minOccurs="0" />
+<xs:element name="fechaN" type="xs:string" minOccurs="0" />
+<xs:element name="municipio" type="xs:string" minOccurs="0" />
+<xs:element name="centroSalud" type="xs:string" minOccurs="0" />
+<xs:element name="direccion" type="xs:string" minOccurs="0" />
+<xs:element name="mna" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="IngresarProductoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarProducto">
+<xs:sequence>
+<xs:element name="codigo" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarProductoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ConsultarProducto">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="ConsultarProductoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

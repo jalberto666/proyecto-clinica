@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13/05/2018 06:55:22 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="cl.model.pojos.Producto" table="producto" catalog="bdproductows" optimistic-lock="version">
+        <id name="codigo" type="java.lang.Integer">
+            <column name="codigo" />
+            <generator class="identity" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="45" not-null="true" />
+        </property>
+        <property name="apellidoP" type="string">
+            <column name="apellidoP" length="45" not-null="true" />
+        </property>
+        <property name="apellidoM" type="string">
+            <column name="apellidoM" length="45" not-null="true" />
+        </property>
+        <property name="sexo" type="string">
+            <column name="sexo" length="12" not-null="true" />
+        </property>
+        <property name="fechaN" type="string">
+            <column name="fechaN" length="12" not-null="true" />
+        </property>
+        <property name="municipio" type="string">
+            <column name="municipio" length="45" not-null="true" />
+        </property>
+        <property name="centroSalud" type="string">
+            <column name="centroSalud" length="45" not-null="true" />
+        </property>
+        <property name="direccion" type="string">
+            <column name="direccion" length="45" not-null="true" />
+        </property>
+        <property name="mna" type="int">
+            <column name="mna" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

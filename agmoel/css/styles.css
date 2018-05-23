@@ -1,0 +1,25 @@
+body {
+    font-family: 'Dosis', sans-serif;
+    color:a1a1a1;
+    
+}
+
+a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+ 
+
+
+a:hover, a:active {
+        background-color: #4CAF50;
+        color: white;
+}

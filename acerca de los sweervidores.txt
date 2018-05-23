@@ -1,0 +1,5 @@
+Se ocupo Apache- Tomcat
+
+
+
+Se ocupo un web service y un web service client para realizar las consultas y para ingresar los datos.
